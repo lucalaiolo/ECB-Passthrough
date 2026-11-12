@@ -1,0 +1,50 @@
+name,key,country,title,first,last,rows,missing
+L_NFC_EA,MIR.M.U2.B.A2I.AM.R.A.2240.EUR.N,U2,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_HH_EA,MIR.M.U2.B.A2C.AM.R.A.2250.EUR.N,U2,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.AT.B.A2I.AM.R.A.2240.EUR.N,AT,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.BE.B.A2I.AM.R.A.2240.EUR.N,BE,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.BG.B.A2I.AM.R.A.2240.EUR.N,BG,Cost of borrowing for corporations,2026-01,2026-09,9,0
+L_NFC_countries,MIR.M.CY.B.A2I.AM.R.A.2240.EUR.N,CY,Cost of borrowing for corporations,2008-01,2026-09,225,0
+L_NFC_countries,MIR.M.DE.B.A2I.AM.R.A.2240.EUR.N,DE,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.EE.B.A2I.AM.R.A.2240.EUR.N,EE,Cost of borrowing for corporations,2005-01,2026-09,261,0
+L_NFC_countries,MIR.M.ES.B.A2I.AM.R.A.2240.EUR.N,ES,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.FI.B.A2I.AM.R.A.2240.EUR.N,FI,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.FR.B.A2I.AM.R.A.2240.EUR.N,FR,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.GR.B.A2I.AM.R.A.2240.EUR.N,GR,Cost of borrowing for corporations,2002-09,2026-09,289,0
+L_NFC_countries,MIR.M.HR.B.A2I.AM.R.A.2240.EUR.N,HR,Cost of borrowing for corporations,2023-01,2026-09,45,0
+L_NFC_countries,MIR.M.IE.B.A2I.AM.R.A.2240.EUR.N,IE,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.IT.B.A2I.AM.R.A.2240.EUR.N,IT,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.LT.B.A2I.AM.R.A.2240.EUR.N,LT,Cost of borrowing for corporations,2015-01,2026-09,141,0
+L_NFC_countries,MIR.M.LU.B.A2I.AM.R.A.2240.EUR.N,LU,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.LV.B.A2I.AM.R.A.2240.EUR.N,LV,Cost of borrowing for corporations,2014-01,2026-09,153,0
+L_NFC_countries,MIR.M.MT.B.A2I.AM.R.A.2240.EUR.N,MT,Cost of borrowing for corporations,2008-01,2026-09,225,0
+L_NFC_countries,MIR.M.NL.B.A2I.AM.R.A.2240.EUR.N,NL,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.PT.B.A2I.AM.R.A.2240.EUR.N,PT,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.SI.B.A2I.AM.R.A.2240.EUR.N,SI,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_NFC_countries,MIR.M.SK.B.A2I.AM.R.A.2240.EUR.N,SK,Cost of borrowing for corporations,2008-01,2026-09,225,0
+L_NFC_countries,MIR.M.U2.B.A2I.AM.R.A.2240.EUR.N,U2,Cost of borrowing for corporations,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.AT.B.A2C.AM.R.A.2250.EUR.N,AT,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.BE.B.A2C.AM.R.A.2250.EUR.N,BE,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.BG.B.A2C.AM.R.A.2250.EUR.N,BG,Cost of borrowing for households for house purchase,2026-01,2026-09,9,0
+L_HH_countries,MIR.M.CY.B.A2C.AM.R.A.2250.EUR.N,CY,Cost of borrowing for households for house purchase,2008-01,2026-09,225,0
+L_HH_countries,MIR.M.DE.B.A2C.AM.R.A.2250.EUR.N,DE,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.EE.B.A2C.AM.R.A.2250.EUR.N,EE,Cost of borrowing for households for house purchase,2005-01,2026-09,261,0
+L_HH_countries,MIR.M.ES.B.A2C.AM.R.A.2250.EUR.N,ES,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.FI.B.A2C.AM.R.A.2250.EUR.N,FI,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.FR.B.A2C.AM.R.A.2250.EUR.N,FR,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.GR.B.A2C.AM.R.A.2250.EUR.N,GR,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.HR.B.A2C.AM.R.A.2250.EUR.N,HR,Cost of borrowing for households for house purchase,2023-01,2026-09,45,0
+L_HH_countries,MIR.M.IE.B.A2C.AM.R.A.2250.EUR.N,IE,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.IT.B.A2C.AM.R.A.2250.EUR.N,IT,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.LT.B.A2C.AM.R.A.2250.EUR.N,LT,Cost of borrowing for households for house purchase,2015-01,2026-09,141,0
+L_HH_countries,MIR.M.LU.B.A2C.AM.R.A.2250.EUR.N,LU,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.LV.B.A2C.AM.R.A.2250.EUR.N,LV,Cost of borrowing for households for house purchase,2014-01,2026-09,153,0
+L_HH_countries,MIR.M.MT.B.A2C.AM.R.A.2250.EUR.N,MT,Cost of borrowing for households for house purchase,2008-01,2026-09,225,0
+L_HH_countries,MIR.M.NL.B.A2C.AM.R.A.2250.EUR.N,NL,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.PT.B.A2C.AM.R.A.2250.EUR.N,PT,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.SI.B.A2C.AM.R.A.2250.EUR.N,SI,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+L_HH_countries,MIR.M.SK.B.A2C.AM.R.A.2250.EUR.N,SK,Cost of borrowing for households for house purchase,2008-01,2026-09,225,0
+L_HH_countries,MIR.M.U2.B.A2C.AM.R.A.2250.EUR.N,U2,Cost of borrowing for households for house purchase,2003-01,2026-09,285,0
+euribor3m,FM.M.U2.EUR.RT.MM.EURIBOR3MD_.HSTA,U2,"Euribor 3-month - Historical close, average of observations through period",1994-01,2026-10,394,0
+dfr,FM.B.U2.EUR.4F.KR.DFR.LEV,U2,Deposit facility - date of changes (raw data) - Level,1999-01-01,2026-09-16,69,0
+hicp,HICP.M.U2.N.000000.4D0.ANR,U2,HICP Inflation rate - Total - Annual rate of change,1997-01,2026-10,429,71

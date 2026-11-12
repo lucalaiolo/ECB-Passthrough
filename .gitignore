@@ -1,0 +1,6 @@
+# 8 data/ holds the downloads and the clean table; not committed
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv*/
