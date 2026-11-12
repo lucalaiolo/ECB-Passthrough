@@ -1,0 +1,8 @@
+series,form,adf_stat,pvalue,lags,nobs,crit_5pct,rejects_5pct,decision
+r,level,-2.1125,0.2395,11,273,-2.8722,False,use the change
+r,change,-4.3744,0.0003,14,269,-2.8723,True,enters the VAR
+L_NFC,level,-2.2798,0.1786,4,280,-2.8719,False,use the change
+L_NFC,change,-4.3968,0.0003,14,269,-2.8723,True,enters the VAR
+L_HH,level,-1.6620,0.4508,13,271,-2.8723,False,use the change
+L_HH,change,-5.1813,0.0000,3,280,-2.8719,True,enters the VAR
+pi,as it is,-2.4315,0.1330,12,271,-2.8723,False,enters as it is; can't reject: list in 6.10

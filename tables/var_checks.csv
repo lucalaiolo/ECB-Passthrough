@@ -1,0 +1,3 @@
+spec,p,nobs,sample,is_stable,max_eigenvalue_modulus,whiteness_lags,whiteness_stat,whiteness_df,whiteness_crit_5pct,whiteness_pvalue,whiteness_rejects_5pct
+bic,1,283,2003-03 to 2026-09,True,0.982728,24,646.431,368,413.732,1.38666e-17,True
+aic,6,278,2003-08 to 2026-09,True,0.904464,24,385.936,288,328.58,9.97479e-05,True

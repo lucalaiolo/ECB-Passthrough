@@ -1,0 +1,79 @@
+# 3 Data: every series used in the project (the table in README §3).
+# API: {api}/{flow}/{key}?format=csvdata
+# On the Data Portal a series is written FLOW.KEY; in the API path the flow and
+# the key are separated by "/".
+api: https://data-api.ecb.europa.eu/service/data
+
+# name -> flow, key, the variable it becomes in the clean table, and its scope:
+# "euro_area" series are stored with country U2; "countries" keys have an empty
+# country slot (= all countries) and are filtered to euro-area members.
+series:
+  L_NFC_EA:
+    title: Lending rate to companies, euro area
+    flow: MIR
+    key: M.U2.B.A2I.AM.R.A.2240.EUR.N
+    variable: L_NFC
+    scope: euro_area
+  L_HH_EA:
+    title: Mortgage rate, euro area
+    flow: MIR
+    key: M.U2.B.A2C.AM.R.A.2250.EUR.N
+    variable: L_HH
+    scope: euro_area
+  L_NFC_countries:
+    title: Lending rate to companies, every country
+    flow: MIR
+    key: M..B.A2I.AM.R.A.2240.EUR.N
+    variable: L_NFC
+    scope: countries
+  L_HH_countries:
+    title: Mortgage rate, every country
+    flow: MIR
+    key: M..B.A2C.AM.R.A.2250.EUR.N
+    variable: L_HH
+    scope: countries
+  euribor3m:
+    title: 3-month Euribor, monthly average
+    flow: FM
+    key: M.U2.EUR.RT.MM.EURIBOR3MD_.HSTA
+    variable: euribor3m
+    scope: euro_area
+  dfr:
+    title: ECB deposit facility rate (one row per rate change)
+    flow: FM
+    key: B.U2.EUR.4F.KR.DFR.LEV
+    variable: dfr
+    scope: euro_area
+    changes_only: true   # forward-fill to a daily calendar, then monthly average
+  hicp:
+    title: Euro-area inflation (HICP, annual rate)
+    flow: HICP
+    key: M.U2.N.000000.4D0.ANR
+    variable: inflation
+    scope: euro_area
+
+# 3 "Keep only euro-area members, each from the month it adopted the euro."
+# A country code returned by the wildcards that is neither U2 nor listed here
+# stops the pipeline.
+euro_area_members:
+  AT: {name: Austria, adopted: "1999-01"}
+  BE: {name: Belgium, adopted: "1999-01"}
+  DE: {name: Germany, adopted: "1999-01"}
+  ES: {name: Spain, adopted: "1999-01"}
+  FI: {name: Finland, adopted: "1999-01"}
+  FR: {name: France, adopted: "1999-01"}
+  IE: {name: Ireland, adopted: "1999-01"}
+  IT: {name: Italy, adopted: "1999-01"}
+  LU: {name: Luxembourg, adopted: "1999-01"}
+  NL: {name: Netherlands, adopted: "1999-01"}
+  PT: {name: Portugal, adopted: "1999-01"}
+  GR: {name: Greece, adopted: "2001-01"}
+  SI: {name: Slovenia, adopted: "2007-01"}
+  CY: {name: Cyprus, adopted: "2008-01"}
+  MT: {name: Malta, adopted: "2008-01"}
+  SK: {name: Slovakia, adopted: "2009-01"}
+  EE: {name: Estonia, adopted: "2011-01"}
+  LV: {name: Latvia, adopted: "2014-01"}
+  LT: {name: Lithuania, adopted: "2015-01"}
+  HR: {name: Croatia, adopted: "2023-01"}
+  BG: {name: Bulgaria, adopted: "2026-01"}
