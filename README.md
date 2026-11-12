@@ -418,4 +418,146 @@ ecb-passthrough/
 
 ## 9. Results
 
-*(to fill in: the three charts; the country tables for company loans and mortgages; the ADF, lag-choice and stability results; the two pass-through curves with their 90% bands; and three findings in one sentence each)*
+*Data downloaded on 12 November 2026: lending rates to September 2026; Euribor, the deposit rate and inflation to October 2026. Unless noted, every number below is in `tables/`; `make refresh figures var` reproduces them.*
+
+### 9.1 Three findings
+
+1. **A Euribor move reaches company-loan rates faster and more fully than mortgage rates:** in the euro-area VAR, 0.58 of it reaches company loans in the same month and 0.72–0.75 after two years, against 0.12 and 0.32–0.42 for mortgages (ranges across the one- and six-lag models, 9.4).
+2. **In the 2022–23 hikes, euro-area lending rates followed Euribor more closely than the VAR's 2003–2026 average:** between December 2021 and November 2023 they rose by 0.85 (company loans, 1.36% → 5.25%) and 0.60 (mortgages, 1.31% → 4.03%) of Euribor's 4.55 pp increase.
+3. **Countries differed far more for mortgages than for company loans:** in 2022–23 mortgage pass-through ranged from 0.04 (Malta) to 0.89 (Estonia), with the middle half of countries between 0.53 and 0.75, against 0.79 to 0.87 for company loans.
+
+### 9.2 The facts (Section 4)
+
+**Chart 1. The chain over time.** Between December 2021 and November 2023, 3-month Euribor rose from −0.58% to 3.97%, the euro-area company-loan rate from 1.36% to 5.25% and the mortgage rate from 1.31% to 4.03%; the deposit rate went from −0.50% to 4.00% (September 2023). The ECB then cut the deposit rate to 2.00% (June 2025) and raised it to 2.25% (June 2026) and 2.50% (September 2026). Both lending rates were at their highest of the sample in September 2008 (6.03% and 5.55%). Data: `tables/chart1_chain.csv`.
+
+![Chart 1](figures/chart1_chain.png)
+
+**Chart 2. How different countries are.** The cross-country standard deviation of company-loan rates peaked at 1.68 pp in 2012 (1.61 pp among the 12 members of 2003); for mortgages it peaked at 1.15 pp in April 2009. Between June 2022 and June 2024 it stayed between 0.59 and 0.81 pp for company loans, while for mortgages it doubled across all members, from 0.45 pp (June 2022) to 0.93 pp (October 2023), and fell among the 12 members of 2003, from 0.55 to 0.35 pp. In September 2026 (21 countries): 0.57 pp for company loans and 0.63 pp for mortgages. Data: `tables/dispersion.csv`.
+
+![Chart 2](figures/chart2_dispersion.png)
+
+**Chart 3. The 2022–23 hikes by country.** Between December 2021 and November 2023 mortgage rates rose by 3.59–4.05 pp in Estonia, Lithuania, Portugal, Finland and Latvia and by 0.17 pp in Malta; company-loan rates rose by 3.09–4.56 pp everywhere except Malta (1.73 pp). Croatia (from January 2023) and Bulgaria (from January 2026) appear from the month they adopted the euro.
+
+![Chart 3](figures/chart3_countries.png)
+
+### 9.3 Pass-through in 2022–23 (Section 5)
+
+| Rule | $t_0$ | $t_1$ | $t_1+6$ | $r_{t_0}$ | $r_{t_1}$ | $\Delta r$ |
+|---|---|---|---|--:|--:|--:|
+| Lowest Euribor, Jan 2021–Jun 2022 | Dec 2021 | Nov 2023 | May 2024 | −0.582 | 3.972 | 4.554 pp |
+| Robustness: last month before the first hike | Jun 2022 | Nov 2023 | May 2024 | −0.239 | 3.972 | 4.211 pp |
+
+The tables cover the 19 countries that were members at $t_0$; Croatia and Bulgaria joined later. "Speed" is the number of months after $t_0$ until the rate first covered half of its total rise. The last column redoes PT with $t_0$ = June 2022 (rank in brackets). Full tables: `tables/hiking_cycle_*.csv`.
+
+**Company loans**
+
+| Rank | Country | Rate at $t_0$, % | Rate at $t_1$, % | Rise, pp | PT at $t_1$ | PT at $t_1+6$ | Speed, months | PT, $t_0$ = Jun 2022 |
+|---|---|--:|--:|--:|--:|--:|--:|--:|
+| 1 | Finland | 0.86 | 5.42 | 4.56 | 1.00 | 1.00 | 11 | 0.95 (3) |
+| 2 | Estonia | 2.57 | 7.04 | 4.47 | 0.98 | 0.96 | 11 | 1.00 (1) |
+| 3 | Italy | 1.33 | 5.64 | 4.31 | 0.95 | 0.90 | 12 | 0.95 (2) |
+| 4 | Slovakia | 1.82 | 5.99 | 4.17 | 0.92 | 0.87 | 13 | 0.87 (7) |
+| 5 | Austria | 1.15 | 5.14 | 3.99 | 0.88 | 0.85 | 13 | 0.88 (5) |
+| 6 | Germany | 1.44 | 5.39 | 3.95 | 0.87 | 0.86 | 12 | 0.74 (15) |
+| 7 | Latvia | 2.98 | 6.88 | 3.90 | 0.86 | 0.83 | 14 | 0.88 (6) |
+| 7 | Lithuania | 2.73 | 6.63 | 3.90 | 0.86 | 0.85 | 14 | 0.92 (4) |
+| 9 | Spain | 1.30 | 5.11 | 3.81 | 0.84 | 0.81 | 12 | 0.85 (9) |
+| 10 | Slovenia | 1.57 | 5.32 | 3.75 | 0.82 | 0.87 | 12 | 0.86 (8) |
+| 11 | Portugal | 2.08 | 5.77 | 3.69 | 0.81 | 0.78 | 12 | 0.85 (9) |
+| 12 | Belgium | 1.53 | 5.20 | 3.67 | 0.81 | 0.79 | 12 | 0.83 (11) |
+| 13 | Ireland | 2.39 | 6.03 | 3.64 | 0.80 | 0.76 | 11 | 0.66 (18) |
+| 14 | France | 1.27 | 4.89 | 3.62 | 0.79 | 0.72 | 12 | 0.78 (12) |
+| 15 | Netherlands | 0.78 | 4.36 | 3.58 | 0.79 | 0.77 | 12 | 0.74 (14) |
+| 16 | Greece | 2.96 | 6.16 | 3.20 | 0.70 | 0.57 | 13 | 0.72 (17) |
+| 17 | Luxembourg | 1.31 | 4.43 | 3.12 | 0.69 | 0.60 | 13 | 0.74 (13) |
+| 18 | Cyprus | 2.89 | 5.98 | 3.09 | 0.68 | 0.61 | 13 | 0.72 (16) |
+| 19 | Malta | 3.38 | 5.11 | 1.73 | 0.38 | 0.38 | 14 | 0.46 (19) |
+
+**Mortgages**
+
+| Rank | Country | Rate at $t_0$, % | Rate at $t_1$, % | Rise, pp | PT at $t_1$ | PT at $t_1+6$ | Speed, months | PT, $t_0$ = Jun 2022 |
+|---|---|--:|--:|--:|--:|--:|--:|--:|
+| 1 | Estonia | 2.06 | 6.11 | 4.05 | 0.89 | 0.80 | 13 | 0.92 (1) |
+| 2 | Lithuania | 2.07 | 5.86 | 3.79 | 0.83 | 0.75 | 11 | 0.89 (2) |
+| 3 | Portugal | 0.83 | 4.60 | 3.77 | 0.83 | 0.73 | 10 | 0.75 (4) |
+| 4 | Finland | 0.79 | 4.39 | 3.60 | 0.79 | 0.75 | 10 | 0.67 (6) |
+| 5 | Latvia | 2.34 | 5.93 | 3.59 | 0.79 | 0.73 | 12 | 0.82 (3) |
+| 6 | Italy | 1.40 | 4.61 | 3.21 | 0.70 | 0.57 | 10 | 0.58 (9) |
+| 7 | Slovakia | 0.93 | 4.05 | 3.12 | 0.69 | 0.72 | 10 | 0.53 (10) |
+| 8 | Luxembourg | 1.36 | 4.43 | 3.07 | 0.67 | 0.63 | 11 | 0.59 (8) |
+| 9 | Austria | 1.22 | 4.22 | 3.00 | 0.66 | 0.65 | 11 | 0.61 (7) |
+| 10 | Cyprus | 2.22 | 5.17 | 2.95 | 0.65 | 0.48 | 15 | 0.68 (5) |
+| 11 | Germany | 1.32 | 4.22 | 2.90 | 0.64 | 0.58 | 7 | 0.39 (16) |
+| 12 | Spain | 1.38 | 3.91 | 2.53 | 0.56 | 0.48 | 11 | 0.53 (10) |
+| 13 | Netherlands | 1.65 | 4.07 | 2.42 | 0.53 | 0.48 | 10 | 0.44 (15) |
+| 13 | France | 1.10 | 3.52 | 2.42 | 0.53 | 0.52 | 14 | 0.52 (12) |
+| 15 | Slovenia | 1.68 | 4.07 | 2.39 | 0.52 | 0.45 | 10 | 0.51 (13) |
+| 16 | Belgium | 1.48 | 3.83 | 2.35 | 0.52 | 0.43 | 10 | 0.45 (14) |
+| 17 | Greece | 2.53 | 4.46 | 1.93 | 0.42 | 0.37 | 10 | 0.33 (18) |
+| 18 | Ireland | 2.72 | 4.22 | 1.50 | 0.33 | 0.29 | 16 | 0.33 (17) |
+| 19 | Malta | 1.92 | 2.09 | 0.17 | 0.04 | 0.04 | 10 | −0.01 (19) |
+
+- **How much.** Median PT at $t_1$: 0.82 for company loans (middle half 0.79–0.87) and 0.65 for mortgages (0.53–0.75).
+- **Six months after the Euribor peak.** For both products, 17 of the 19 countries had a lower rate at $t_1+6$ than at $t_1$; medians 0.81 (company loans) and 0.57 (mortgages).
+- **Speed.** Median 12 months for company loans (range 11–14) and 10 months for mortgages (7–16).
+- **Robustness ($t_0$ = June 2022).** Median PT 0.85 for company loans and 0.53 for mortgages. Malta is last in all four rankings and Estonia in the top two. Mortgage rates had already risen by June 2022 in several countries (Germany 1.32% → 2.57%, euro area 1.31% → 1.97%), so their PT is lower from that start.
+
+### 9.4 The VAR (Section 6)
+
+**Data (6.3).** $y_t = (\pi_t, \Delta r_t, \Delta L^{\text{NFC}}_t, \Delta L^{\text{HH}}_t)$, February 2003 to September 2026: 284 months.
+
+**ADF tests (6.4).** Constant, lags chosen by AIC; 5% critical value about −2.87.
+
+| Series | Tested as | ADF statistic | p-value | Lags | Decision |
+|---|---|--:|--:|--:|---|
+| Euribor $r_t$ | level | −2.11 | 0.240 | 11 | can't reject: use the change |
+| | change | −4.37 | 0.0003 | 14 | rejects |
+| Company-loan rate $L^{\text{NFC}}_t$ | level | −2.28 | 0.179 | 4 | can't reject: use the change |
+| | change | −4.40 | 0.0003 | 14 | rejects |
+| Mortgage rate $L^{\text{HH}}_t$ | level | −1.66 | 0.451 | 13 | can't reject: use the change |
+| | change | −5.18 | < 0.0001 | 3 | rejects |
+| Inflation $\pi_t$ | as it is | −2.43 | 0.133 | 12 | can't reject; enters as it is |
+
+The test can't reject a random walk for inflation, so the 6.10 caveat "Inflation enters in levels" applies: the model mixes a very persistent series with differenced ones.
+
+**Lag choice (6.5).** BIC picks $p = 1$. Values from `select_order(maxlags=12)`, all on the same months; smallest in bold:
+
+| $p$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| BIC | **−19.256** | −19.155 | −18.989 | −18.785 | −18.589 | −18.399 | −18.161 | −17.967 | −17.711 | −17.461 | −17.218 | −16.992 |
+| AIC | −19.521 | −19.632 | −19.678 | −19.686 | −19.703 | **−19.724** | −19.698 | −19.717 | −19.673 | −19.635 | −19.604 | −19.590 |
+
+**Stability and leftover patterns (6.6).** The whiteness test rejects at $p = 1$, so the VAR was also fitted with AIC's $p = 6$. It rejects there too.
+
+| Model | Months used | Largest eigenvalue modulus | Stable | Whiteness test, 24 lags |
+|---|---|--:|---|---|
+| $p = 1$ (BIC) | 283, Mar 2003–Sep 2026 | 0.983 | yes | statistic 646.4, df 368, p < 0.0001: rejects |
+| $p = 6$ (AIC) | 278, Aug 2003–Sep 2026 | 0.904 | yes | statistic 385.9, df 288, p = 0.0001: rejects |
+
+**Pass-through curves (6.8–6.9).** $\text{PT}(h)$ with 90% bands from the residual bootstrap (1,000 draws). In no draw of either model did Euribor's cumulative response fall to zero or below at any $h \le 24$, so the bands are meaningful at every horizon. Full curves: `tables/var_pt_bic.csv`, `tables/var_pt_aic.csv`.
+
+| $h$ | Company loans, $p = 1$ | Mortgages, $p = 1$ | Company loans, $p = 6$ | Mortgages, $p = 6$ |
+|--:|---|---|---|---|
+| 0 | 0.58 [0.48, 0.64] | 0.12 [0.08, 0.16] | 0.58 [0.51, 0.64] | 0.12 [0.09, 0.15] |
+| 1 | 0.64 [0.58, 0.68] | 0.21 [0.18, 0.25] | 0.60 [0.55, 0.64] | 0.19 [0.15, 0.23] |
+| 2 | 0.66 [0.61, 0.70] | 0.27 [0.23, 0.31] | 0.65 [0.61, 0.69] | 0.26 [0.22, 0.30] |
+| 3 | 0.68 [0.63, 0.71] | 0.31 [0.27, 0.36] | 0.67 [0.63, 0.71] | 0.30 [0.26, 0.35] |
+| 6 | 0.70 [0.65, 0.74] | 0.37 [0.32, 0.42] | 0.74 [0.70, 0.79] | 0.35 [0.29, 0.41] |
+| 9 | 0.71 [0.66, 0.75] | 0.39 [0.34, 0.45] | 0.74 [0.70, 0.79] | 0.33 [0.25, 0.41] |
+| 12 | 0.71 [0.66, 0.75] | 0.40 [0.34, 0.46] | 0.75 [0.70, 0.80] | 0.33 [0.23, 0.41] |
+| 18 | 0.72 [0.67, 0.76] | 0.42 [0.35, 0.47] | 0.75 [0.69, 0.80] | 0.33 [0.19, 0.42] |
+| 24 | 0.72 [0.67, 0.76] | 0.42 [0.35, 0.48] | 0.75 [0.68, 0.80] | 0.32 [0.16, 0.43] |
+
+![Pass-through curves, p = 1](figures/var_pt_bic.png)
+
+![Pass-through curves, p = 6](figures/var_pt_aic.png)
+
+**Cumulative responses.** A 1 pp Euribor surprise is followed by further rises in Euribor itself. After 24 months the level of Euribor is 4.16 pp higher (90% band 2.98–4.94), company-loan rates 3.01 pp (2.10–3.59) and mortgage rates 1.77 pp (1.12–2.19), with $p = 1$. With $p = 6$ the figures are 3.88, 2.91 and 1.25 pp. Figures `figures/var_cirf_bic.png` and `figures/var_cirf_aic.png`; numbers in `tables/var_irf_*.csv`.
+
+**Cross-check (6.9).** The bootstrap bands of the cumulative responses (before rescaling) are wider than `cum_errband_mc`'s at short horizons:
+- **Where:** for $p = 1$, 4.2 times for Euribor and 3.2 times for company loans at $h = 0$, falling to about 1.3–1.4 times at $h = 24$. For $p = 6$, 3.7 and 2.4 times at $h = 0$, about 1.0 at $h = 24$.
+- **Midpoints:** they agree, within 0.10 band widths for $p = 1$ and 0.36 for $p = 6$.
+- **Why:** the residuals of the Euribor and company-rate equations have very fat tails: for $p = 1$, excess kurtosis about 46 and 18 (`scipy.stats.kurtosis` of the residuals; not in `tables/`), with the largest in November 2008 at 10.4 and 8.5 standard deviations. Resampled residuals carry those tails; `cum_errband_mc`'s normal errors don't.
+- **Check:** on a VAR whose errors are normal, the two methods agree (`tests/test_crosscheck.py`).
+
+Full comparison: `tables/var_crosscheck_*.csv`.
