@@ -48,7 +48,7 @@ The deposit rate has one row per change, so it is forward-filled to a daily cale
 2. How far apart countries are: each month, the standard deviation of lending rates across countries, for company loans and mortgages. It is also computed for the 12 members of 2003, so that new members joining does not move the line.
 3. One small panel per country from January 2021, with its two lending rates and Euribor in grey.
 
-## 5. The 2022–23 hikes, by arithmetic
+## 5. The 2022 to 2023 hikes, by arithmetic
 
 $t_0$ is the month of lowest Euribor between January 2021 and June 2022, and $t_1$ the month of highest Euribor in 2023 and 2024. For each country,
 
