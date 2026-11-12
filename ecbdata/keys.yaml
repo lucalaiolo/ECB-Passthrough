@@ -1,4 +1,4 @@
-# 3 Data: every series used in the project (the table in README §3).
+# 3 Data: every series used in the project (the table in docs/spec.md §3).
 # API: {api}/{flow}/{key}?format=csvdata
 # On the Data Portal a series is written FLOW.KEY; in the API path the flow and
 # the key are separated by "/".
